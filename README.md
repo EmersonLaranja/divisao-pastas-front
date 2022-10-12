@@ -41,9 +41,7 @@ Na pasta _\_assets_ são armezandos alguns css’s e javascript’s globais do p
 
 ## config
 
-A pasta \_config como o próprio nome já diz, é responsável por realizar configurações no projeto
-
-Aqui vai ficar todos os arquivos de configuração, que são utilizados de uma forma global pela aplicação.
+A pasta \_config como o próprio nome já diz, é responsável por realizar configurações no projeto. Aqui vão ficar todos os arquivos de configuração, que são utilizados de uma forma global pela aplicação.
 
 ## constants
 
@@ -56,8 +54,6 @@ A pasta containers irá armazenar os componentes que são containers do projeto,
 Dentro da pasta containers estarão os componentes burros que irão ser informados nas rotas e realiazarão o mapeando das ações e store (mapDispatchToProps e mapStateToProps) para os componentes da pasta pages, a ideia de não chamar diretamente os componentes da pasta pages é para facilitar futuramente nos testes, facilitando a necessidade de mockar ações, stores, etc…
 
 Os containers basicamente serão wrap’s para os pages e cada page deve ter um container.
-
-Aqui vai ficar todos os nossos containers responsáveis por fazer um Dependency Injection na nossa aplicação, tirando a dependencia da nossa aplicação de funcionar com alguma biblioteca.
 
 ## docs
 
@@ -73,13 +69,11 @@ Dentro da pasta pages estará o componente que será renderizado na tela.
 
 ## components
 
-Caso a feature precise de um componente exlusivo, uma pasta components deve ser criada para armazená-lo. Se um dia ele for necessário e compartilhado em mais de uma feature o mesmo deve ser migrado para a pasta components da raiz (src/components). A ideia é parecida com a especificidade do Editorconfig ou ESLint, quanto mais baixo for o nível da pasta, mais específica e exclusiva ela será.
-
-Aqui vai ficar todos os componentes que são utilizados pela aplicação. No post de React eu crio uma pasta de components dentro da pasta Pages para os componentes exclusivos das páginas, mas como o Next.js usa um sistema de rotas diferente, não é possível criar uma pasta components dentro da pages, então todos os componentes ficarão aqui.
+Aqui vai ficar todos os componentes que são utilizados pela aplicação. Caso a feature precise de um componente exlusivo, uma pasta components deve ser criada para armazená-lo.
 
 ## services
 
-Nessa pasta fica todos os arquivos responsáveis por consumir serviços externos, como por exemplo o arquivo de configuração do axios para consumir APIs RestFul.
+Nessa pasta fica todos os arquivos responsáveis por consumir serviços externos, como por exemplo o arquivo de configuração do axios para consumir APIs.
 
 ## utils
 
